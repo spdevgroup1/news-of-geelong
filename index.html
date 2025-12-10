@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lucida Sans", sans-serif;
+  font-size: 17px;
+  background-color: red;
+  margin:0;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header'
+    'head-story'
+    'left'
+    'right'
+    'ad'
+    'footer';
+  background-color: rgb(2, 13, 4);
+  gap: 2px;
+  width:904px;
+  margin-left: 0%;  
+}
+
+.header {
+  grid-area: header;
+  position:fixed;
+  width:100%;
+  background-color: rgb(47, 53, 235);
+  text-align: center;
+  color: #ffffff;
+}
+
+.header > h1 {
+  font-size: 40px;
+}
+
+.left {
+  grid-area: menu;
+  width: 300px;
+  margin-left: 2px;
+  margin-top: 2px;
+  }
+  
+.left ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.left li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+}
+
+.left li:hover {
+  background-color: #0099cc;
+}
+
+.right {
+  grid-area: menu;
+  width: 300px;
+  margin-left: -98px;
+  margin-top: 2px;
+  }
+  
+.right ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.right li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+}
+
+.right li:hover {
+  background-color: #0099cc;
+}
+  
+li{
+    height: 150px;
+}
+
+.head-story {
+  grid-area: head-story;
+  width: 604px;
+  height:200px;
+  margin-left: 2px;
+  margin-top: 100px;
+  background-color: azure;
+}
+
+.ad {
+  position:fixed;
+  grid-area: facts;
+  width: 300px;
+  margin-left: 606px;
+  margin-top: 102px;
+  border: 1px solid #0099cc;
+  background-color: rgb(179, 179, 174);
+  padding: 10px;
+}
+
+.facts > h2 {
+  font-size: 20px;
+}
+
+.facts li {
+  margin-bottom: 5px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #150ed6;
+  color: #ffffff;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  .header {grid-area: 1 / span 6;}
+  .head-story {grid-area: 2 / span 6;}
+  .left {grid-area: 3 / span 2;}
+  .right {grid-area: 3 / span 2;}
+  .ad {grid-area: 3 / span 2;}
+  .footer {grid-area: 4 / span 6;}
+}
+</style>
+</head>
+<body>
+
+<div class="all-area">  
+<div class="grid-container">
+
+<div class="header"><h1>Newsian</h1></div>
+
+<div class="head-story">
+  <p>Head Story</p>
+        <a href="Link Pages/link-pages1.html">
+        <div>
+          <img src="Content/News Stories/golden-guy-astrophotographer-andrew-mccarthy-snapped-115511389.webp"alt="Image 1"  width="160" height="110" float="left">
+        </div>
+      </a>
+</div>
+
+
+<div class="left">
+  <ul>
+    <li>
+      <a href="Link Pages/link-pages1.html">
+        <div>
+          <img src="Content/News Stories/alabama-9-year-old-girl-attacked-115496800.webp"alt="Image 1"  width="160" height="110" float="left">
+        </div>
+      </a>              
+    </li>
+
+    <li>
+      <a href="Link Pages/link-pages1.html">
+        <div>
+          <img src="Content/News Stories/democratic-rep-brad-sherman-denies-115513708.webp"alt="Image 1"  width="160" height="110" float="left">
+        </div>
+      </a>              
+    </li>
+    <li>
+      <a href="Link Pages/link-pages1.html">
+        <div>
+          <img src="Content/News Stories/driver-crashed-holding-alcoholic-bottle-driving-115502917.webp"alt="Image 1"  width="160" height="110" float="left">
+        </div>
+      </a>              
+    </li>
+    <li>
+      <a href="Link Pages/link-pages1.html">
+        <div>
+          <img src="Content/News Stories/florida-sex-offender-pinellas-county-sex-offender-staged-115518022.webp"alt="Image 1"  width="160" height="110" float="left">
+        </div>
+      </a>              
+    </li>
+    <li>
+      <a href="Link Pages/link-pages1.html">
+        <div>
+          <img src="Content/News Stories/last-us-pennies-five-million-dollars-u-s-treasurer-brandon-beach.webp"alt="Image 1"  width="160" height="110" float="left">
+        </div>
+      </a>              
+    </li>
+    <li>
+      <a href="Link Pages/link-pages1.html">
+        <div>
+          <img src="Content/News Stories/migrant-vessel-four-dead-115499942.webp"alt="Image 1"  width="160" height="110" float="left">
+        </div>
+      </a>              
+    </li>
+  </ul>
+</div>
+
+<div class="right">
+  <ul>
+   <li>
+      <a href="Link Pages/link-pages1.html">
+        <div>
+          <img src="Content/News Stories/oj-simpson-2013-pool-file-photo-o-24414963.webp"alt="Image 1"  width="160" height="110" float="left">
+        </div>
+      </a>              
+    </li>
+    <li>
+      <a href="Link Pages/link-pages1.html">
+        <div>
+          <img src="Content/News Stories/oj-simpson-2013-pool-file-photo-o-24414963.webp" viewid:"" %}"alt="Image 1"  width="160" height="110" float="left">
+        </div>
+      </a>              
+    </li>
+    <li>
+      <a href="Link Pages/link-pages1.html">
+        <div>
+          <img src="/front-page-images/baywatch-actress.webp"alt="Image 1"  width="160" height="110" float="left">
+        </div>
+      </a>              
+    </li>
+    <li>
+      <a href="Link Pages/link-pages1.html">
+        <div>
+          <img src="Content/News Stories/oj-simpson-2013-pool-file-photo-o-24414963.webp"alt="Image 1"  width="160" height="110" float="left">
+        </div>
+      </a>              
+    </li>
+    <li>
+      <a href="Link Pages/link-pages1.html">
+        <div>
+          <img src="Content/News Stories/oj-simpson-2013-pool-file-photo-o-24414963.webp"alt="Image 1"  width="160" height="110" float="left">
+        </div>
+      </a>              
+    </li>
+    <li>
+      <a href="Link Pages/link-pages1.html">
+        <div>
+          <img src="Content/News Stories/golden-guy-astrophotographer-andrew-mccarthy-snapped-115511389.webp"alt="Image 1"  width="160" height="110" float="left">
+        </div>
+      </a>              
+    </li>
+  </ul>
+</div>
+ 
+
+<div class="ad" style="height:200px;">
+  <h2>Ad</h2>
+  <ul>
+    <li>Advertisement</li>
+  </ul>
+</div>
+
+<div class="footer"><p>Resize the browser window to see the responsive effect.</p></div>
+  
+</div>
+
+</div>
+
+</body>
+</html>
+
+
